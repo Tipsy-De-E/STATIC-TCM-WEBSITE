@@ -148,7 +148,7 @@ button:focus-visible {
     letter-spacing: -0.02em;
 }
 
-.brand-copy > span {
+.brand-copy>span {
     margin-top: 4px;
     color: var(--muted);
     font-size: 10px;
@@ -446,7 +446,7 @@ button:focus-visible {
     line-height: 1.12;
 }
 
-.section-heading > p:last-child {
+.section-heading>p:last-child {
     max-width: 630px;
     margin: 18px 0 0;
     color: var(--muted);
@@ -555,7 +555,7 @@ button:focus-visible {
     color: var(--gold);
 }
 
-.campaign-panel .section-heading > p:last-child {
+.campaign-panel .section-heading>p:last-child {
     color: #dad6e4;
 }
 
@@ -604,7 +604,7 @@ button:focus-visible {
     color: var(--navy);
 }
 
-.tagline-card > p {
+.tagline-card>p {
     margin: 2px 0 15px;
     font-size: 10px;
     font-weight: 800;
@@ -1019,7 +1019,7 @@ tbody tr:last-child td {
     font-weight: 400;
 }
 
-.media-placeholder > span:last-child {
+.media-placeholder>span:last-child {
     position: relative;
     z-index: 1;
 }
@@ -1032,7 +1032,7 @@ tbody tr:last-child td {
     padding: 13px 5px 3px;
 }
 
-.portfolio-label > span {
+.portfolio-label>span {
     display: grid;
     width: 26px;
     height: 26px;
@@ -1094,7 +1094,7 @@ tbody tr:last-child td {
     font-weight: 750;
 }
 
-.social-placeholder > span:last-child {
+.social-placeholder>span:last-child {
     color: var(--muted);
     font-size: 11px;
 }
@@ -1135,7 +1135,7 @@ tbody tr:last-child td {
     color: var(--gold);
 }
 
-.contact-copy > p:not(.eyebrow) {
+.contact-copy>p:not(.eyebrow) {
     max-width: 440px;
     margin: 17px 0 23px;
     color: #e0e5f1;
@@ -1167,7 +1167,7 @@ tbody tr:last-child td {
     font-size: 34px;
 }
 
-.references-section > p:not(.eyebrow) {
+.references-section>p:not(.eyebrow) {
     max-width: 640px;
     margin: 13px 0 22px;
     color: var(--muted);
@@ -1292,7 +1292,7 @@ tbody tr:last-child td {
     height: 33px;
 }
 
-.site-footer > p {
+.site-footer>p {
     margin: 0;
     color: var(--muted);
     font-size: 11px;
@@ -1523,7 +1523,7 @@ tbody tr:last-child td {
         padding: 25px 5%;
     }
 
-    .site-footer > p {
+    .site-footer>p {
         max-width: 350px;
     }
 }
@@ -1537,7 +1537,7 @@ tbody tr:last-child td {
         font-size: 12px;
     }
 
-    .brand-copy > span {
+    .brand-copy>span {
         font-size: 9px;
     }
 
@@ -1588,13 +1588,14 @@ tbody tr:last-child td {
         font-size: 11px;
     }
 
-    .brand-copy > span {
+    .brand-copy>span {
         font-size: 8px;
         letter-spacing: 0.04em;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
