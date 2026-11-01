@@ -8,8 +8,8 @@
     <meta name="description"
         content="Discover Technology and Communication Management at USTP through the Ideas Into Impact promotional campaign portfolio.">
     <title>Ideas Into Impact | TCM Promotional Campaign</title>
-    <link rel="icon" type="image/png" href="../Assets/tcm-favicon.png">
-    <link rel="stylesheet" href="../Styles/tcm-home.css">
+    <link rel="icon" type="image/png" href="Assets/tcm-favicon.png">
+    <link rel="stylesheet" href="Styles/tcm-home.css">
 </head>
 
 <body>
@@ -17,8 +17,8 @@
     <header class="site-header">
         <a class="brand" href="#home" aria-label="Ideas Into Impact home">
             <span class="brand-logos" aria-hidden="true">
-                <img class="brand-logo brand-logo-ustp" src="../Assets/ustp-logo.png" alt="">
-                <img class="brand-logo brand-logo-voices" src="../Assets/tcm-logo.png" alt="">
+                <img class="brand-logo brand-logo-ustp" src="Assets/ustp-logo.png" alt="">
+                <img class="brand-logo brand-logo-voices" src="Assets/tcm-logo.png" alt="">
             </span>
             <span class="brand-copy">
                 <strong>Ideas Into Impact</strong>
@@ -73,7 +73,7 @@
             <div class="hero-art" aria-hidden="true">
                 <span class="orbit orbit-one"></span>
                 <span class="orbit orbit-two"></span>
-                <img class="hero-logo" src="../Assets/tcm-logo.png" alt="TCM promotional campaign logo">
+                <img class="hero-logo" src="Assets/tcm-logo.png" alt="TCM promotional campaign logo">
                 <span class="hero-art-caption">Communication<br>meets possibility</span>
                 <span class="hero-art-dot"></span>
             </div>
@@ -210,10 +210,10 @@
                 <article class="portfolio-card">
                     <button class="portfolio-media-trigger portfolio-poster-preview" type="button"
                         aria-haspopup="dialog" aria-controls="media-viewer-dialog"
-                        aria-label="Open the TCM promotional poster" data-image="../Assets/tcm-promotional-poster.png"
+                        aria-label="Open the TCM promotional poster" data-image="Assets/tcm-promotional-poster.png"
                         data-alt="TCM promotional poster with the message Your Ideas. Your Skills. Your Future."
                         data-title="Promotional Poster">
-                        <img src="../Assets/tcm-promotional-poster.png" alt="">
+                        <img src="Assets/tcm-promotional-poster.png" alt="">
                         <span class="portfolio-media-badge">PROMOTIONAL POSTER</span>
                         <span class="infographic-preview-hint">Open the poster <span aria-hidden="true">↗</span></span>
                     </button>
@@ -224,10 +224,10 @@
                 <article class="portfolio-card featured-portfolio-card">
                     <button class="portfolio-media-trigger portfolio-infographic-trigger" type="button"
                         aria-haspopup="dialog" aria-controls="media-viewer-dialog" aria-label="View the TCM infographic"
-                        data-image="../Assets/tcm-infographic.png"
+                        data-image="Assets/tcm-infographic.png"
                         data-alt="TCM infographic explaining communication, technology, creativity, teamwork and career opportunities"
                         data-title="TCM Infographic">
-                        <img src="../Assets/tcm-infographic.png" alt="">
+                        <img src="Assets/tcm-infographic.png" alt="">
                         <span class="portfolio-media-badge">INFOGRAPHIC</span>
                         <span class="infographic-preview-hint">View infographic <span aria-hidden="true">↗</span></span>
                     </button>
@@ -328,26 +328,26 @@
                 <div class="section-heading">
                     <p class="eyebrow">09 / Website Folder Guide</p>
                     <h2 id="structure-title">Where Everything <span>Lives.</span></h2>
-                    <p>The active TCM portfolio lives in one HTML file, with its styles and images kept in separate
-                        folders. Older campaign files are archived for review.</p>
+                    <p>The active TCM portfolio is served from the repository root, with its styles and images kept in
+                        separate folders.</p>
                 </div>
                 <div class="structure-layout">
                     <pre class="folder-tree" aria-label="Website folder structure"><code>Activity-Campaign/
-├── Assets/
+                    ├── index.html
+                    ├── Assets/
 │   ├── tcm-campus-background.png
-│   ├── tcm-favicon.png           circular browser-tab logo
-│   ├── tcm-logo.png              VOICES campaign logo
-│   └── ustp-logo.png             transparent USTP logo
-├── Pages/
-│   └── Index.html                 all sections and navigation in one file
-├── Styles/
-│   └── tcm-home.css              violet and USTP themed page styles
-└── Legacy-Archive/               previous campaign files to review or delete</code></pre>
+                    │   ├── tcm-favicon.png
+                    │   ├── tcm-infographic.png
+                    │   ├── tcm-logo.png
+                    │   ├── tcm-promotional-poster.png
+                    │   └── ustp-logo.png
+                    └── Styles/
+                        └── tcm-home.css</code></pre>
                     <div class="structure-details">
                         <article>
-                            <h3>Pages/Index.html</h3>
+                            <h3>index.html</h3>
                             <p>Contains the header, navigation, every campaign section, and footer together in one
-                                file. Each navigation link scrolls to its matching section.</p>
+                                file. Vercel can serve it as the site homepage from the repository root.</p>
                         </article>
                         <article>
                             <h3>Styles/ and Assets/</h3>
@@ -355,14 +355,9 @@
                                 separate from the HTML.</p>
                         </article>
                         <article>
-                            <h3>Run the site</h3>
-                            <p>Open <strong>Pages/Index.html</strong> directly in your browser, or use VS Code Live
-                                Server. The section content no longer requires a local server.</p>
-                        </article>
-                        <article>
-                            <h3>Legacy-Archive/</h3>
-                            <p>Preserves the older campaign pages and styles separately so you can review or delete
-                                them later.</p>
+                            <h3>Deploy on Vercel</h3>
+                            <p>Set the Vercel Root Directory to the repository root, not a subfolder. This keeps the
+                                homepage, stylesheet, and image assets together in the deployment.</p>
                         </article>
                     </div>
                 </div>
@@ -373,8 +368,8 @@
     <footer class="site-footer">
         <a class="brand footer-brand" href="#home">
             <span class="brand-logos" aria-hidden="true">
-                <img class="brand-logo brand-logo-ustp" src="../Assets/ustp-logo.png" alt="">
-                <img class="brand-logo brand-logo-voices" src="../Assets/tcm-logo.png" alt="">
+                <img class="brand-logo brand-logo-ustp" src="Assets/ustp-logo.png" alt="">
+                <img class="brand-logo brand-logo-voices" src="Assets/tcm-logo.png" alt="">
             </span>
             <span class="brand-copy">
                 <strong>Ideas Into Impact</strong>
@@ -399,7 +394,7 @@
                 </div>
             </header>
             <div class="media-viewer-stage" id="media-viewer-stage">
-                <img class="media-viewer-image" id="media-viewer-image" src="../Assets/tcm-infographic.png"
+                <img class="media-viewer-image" id="media-viewer-image" src="Assets/tcm-infographic.png"
                     alt="TCM infographic explaining communication, technology, creativity, teamwork and career opportunities">
                 <p class="media-viewer-hint" id="media-viewer-hint">Zoom in, then drag the image to explore</p>
             </div>
