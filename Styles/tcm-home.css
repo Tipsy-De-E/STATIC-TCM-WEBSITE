@@ -695,10 +695,29 @@ tbody tr:last-child td {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;
     gap: 22px;
     margin-top: 38px;
+}
+
+.portfolio-video-card {
+    grid-column: 1 / -1;
+}
+
+.portfolio-video-frame {
+    overflow: hidden;
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+    background: var(--navy);
+}
+
+.portfolio-video {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    height: auto;
+    object-fit: contain;
 }
 
 .portfolio-card {
@@ -720,49 +739,6 @@ tbody tr:last-child td {
 .featured-portfolio-card {
     border-color: rgba(108, 98, 136, 0.32);
     box-shadow: 0 15px 34px rgba(55, 51, 79, 0.11);
-}
-
-.media-placeholder {
-    position: relative;
-    display: flex;
-    min-height: 274px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    overflow: hidden;
-    border: 1px solid rgba(220, 216, 230, 0.82);
-    border-radius: 5px;
-    background:
-        radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.94), transparent 60%),
-        linear-gradient(145deg, #f1eef7, #e8e4f0);
-    color: #68637a;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-}
-
-.media-placeholder::before,
-.media-placeholder::after {
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    border: 1px solid rgba(108, 98, 136, 0.1);
-    border-radius: 50%;
-    content: "";
-    pointer-events: none;
-}
-
-.media-placeholder::before {
-    top: -75px;
-    right: -52px;
-}
-
-.media-placeholder::after {
-    bottom: -96px;
-    left: -62px;
-    width: 170px;
-    height: 170px;
 }
 
 .portfolio-poster-preview,
@@ -998,30 +974,6 @@ tbody tr:last-child td {
     font-size: 10px;
     line-height: 1.4;
     pointer-events: none;
-}
-
-.video-placeholder {
-    background: linear-gradient(145deg, rgba(246, 244, 250, 0.93), rgba(229, 225, 238, 0.94));
-}
-
-.placeholder-icon {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    width: 48px;
-    height: 48px;
-    place-items: center;
-    border: 1px solid #c9c4d5;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.75);
-    color: var(--blue);
-    font-size: 22px;
-    font-weight: 400;
-}
-
-.media-placeholder>span:last-child {
-    position: relative;
-    z-index: 1;
 }
 
 .portfolio-label {

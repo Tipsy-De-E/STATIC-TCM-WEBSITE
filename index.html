@@ -207,7 +207,19 @@
                 <p>Explore the creative materials introducing TCM and the ideas behind the campaign.</p>
             </div>
             <div class="portfolio-grid">
-                <article class="portfolio-card">
+                <article class="portfolio-card portfolio-video-card">
+                    <div class="portfolio-video-frame">
+                        <video class="portfolio-video" controls preload="metadata" playsinline
+                            aria-label="Promotional video introducing TCM">
+                            <source src="Assets/banner.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div class="portfolio-label"><span>01</span>
+                        <h3>Promotional Video</h3>
+                    </div>
+                </article>
+                <article class="portfolio-card portfolio-poster-card">
                     <button class="portfolio-media-trigger portfolio-poster-preview" type="button"
                         aria-haspopup="dialog" aria-controls="media-viewer-dialog"
                         aria-label="Open the TCM promotional poster" data-image="Assets/tcm-promotional-poster.png"
@@ -217,7 +229,7 @@
                         <span class="portfolio-media-badge">PROMOTIONAL POSTER</span>
                         <span class="infographic-preview-hint">Open the poster <span aria-hidden="true">↗</span></span>
                     </button>
-                    <div class="portfolio-label"><span>01</span>
+                    <div class="portfolio-label"><span>02</span>
                         <h3>Promotional Poster</h3>
                     </div>
                 </article>
@@ -232,20 +244,11 @@
                         <span class="infographic-preview-hint">View infographic <span aria-hidden="true">↗</span></span>
                     </button>
                     <div class="portfolio-label">
-                        <span>02</span>
+                        <span>03</span>
                         <div>
                             <h3>TCM Infographic</h3>
                             <p>Course highlights, skills, and opportunities</p>
                         </div>
-                    </div>
-                </article>
-                <article class="portfolio-card portfolio-placeholder-card">
-                    <div class="media-placeholder video-placeholder">
-                        <span class="placeholder-icon" aria-hidden="true">▶</span>
-                        <span>Campaign film coming soon</span>
-                    </div>
-                    <div class="portfolio-label"><span>03</span>
-                        <h3>Promotional Video</h3>
                     </div>
                 </article>
             </div>
@@ -333,16 +336,17 @@
                 </div>
                 <div class="structure-layout">
                     <pre class="folder-tree" aria-label="Website folder structure"><code>Activity-Campaign/
-                    ├── index.html
-                    ├── Assets/
+├── index.html
+├── Assets/
+│   ├── banner.mp4
 │   ├── tcm-campus-background.png
-                    │   ├── tcm-favicon.png
-                    │   ├── tcm-infographic.png
-                    │   ├── tcm-logo.png
-                    │   ├── tcm-promotional-poster.png
-                    │   └── ustp-logo.png
-                    └── Styles/
-                        └── tcm-home.css</code></pre>
+│   ├── tcm-favicon.png
+│   ├── tcm-infographic.png
+│   ├── tcm-logo.png
+│   ├── tcm-promotional-poster.png
+│   └── ustp-logo.png
+└── Styles/
+    └── tcm-home.css</code></pre>
                     <div class="structure-details">
                         <article>
                             <h3>index.html</h3>
@@ -351,8 +355,8 @@
                         </article>
                         <article>
                             <h3>Styles/ and Assets/</h3>
-                            <p>Keep the shared page design, campaign logo, USTP logo, favicon, and campus background
-                                separate from the HTML.</p>
+                            <p>Keep the shared page design, campaign video, campaign images, logos, favicon, and campus
+                                background separate from the HTML.</p>
                         </article>
                         <article>
                             <h3>Deploy on Vercel</h3>
